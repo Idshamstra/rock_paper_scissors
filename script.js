@@ -1,4 +1,3 @@
-
 // lets the computer pick a random item in the array
 let choice = ['rock', 'paper', 'scissors'];
 
@@ -33,9 +32,46 @@ const playerSelection = 'rock';
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
 
+function playGame(){
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for (let i = 0; i < 5; i++){
+        const playerSelection = prompt("Enter your choice of weapon! Rock, Paper or Scissors!");
+        const computerSelection = getComputerChoice();
+        console.log('Round ' + (i + 1) + ':');
+        console.log('Player chooses: ' + playerSelection);
+        console.log('Computer chooses: ' + computerSelection);
+
+        const result = playRound(playerSelection, computerSelection);
+        console.log(result);
+
+        if (result.includes('win')) {
+            playerScore++;
+        } else if (result.includes('lose')) {
+            computerScore++;
+        }
+    }
+
+    console.log('\nGame over!');
+    console.log('Player score: ' + playerScore);
+    console.log('Computer score: ' + computerScore);
+
+    if (playerScore > computerScore) {
+        console.log("You beat the computer! You win");
+    } else if ( playerScore < computerScore){
+        console.log("You lose! Computer wins");
+    } else {
+        console.log("It's a tie!")
+    }
+        
+       
+}
+
+playGame();
 
 
-    
+
 
     
 
