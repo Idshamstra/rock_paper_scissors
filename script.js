@@ -6,10 +6,10 @@ function getComputerChoice(){
 }
 console.log(getComputerChoice(choice));
 
-//function that plays a single round of Rock, Paper, Scissors
+//plays single round of Rock, Paper, Scissors
 
 function playRound(playerSelection, computerSelection) {
-    // Convert playerSelection to lowercase for case-insensitive comparison
+    // Convert playerSelection to lowercase 
     playerSelection = playerSelection.toLowerCase();
     
     //handles if the outcome is a tie
@@ -20,10 +20,10 @@ function playRound(playerSelection, computerSelection) {
         (playerSelection === 'scissors' && computerSelection === 'paper') ||
         (playerSelection === 'paper' && computerSelection === 'rock')
     ) {
-        // Handle player win
+       
         return 'You win! ' + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1) + ' beats ' + computerSelection + '!'; 
     } else {
-        // Handle player lose
+        
         return 'You lose! ' + computerSelection.charAt(0).toUpperCase() + computerSelection.slice(1) + ' beats ' + playerSelection + '!'; 
     }
 }
@@ -32,6 +32,7 @@ const playerSelection = 'rock';
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
 
+//score tracker
 function playGame(){
     let playerScore = 0;
     let computerScore = 0;
