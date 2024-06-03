@@ -8,3 +8,4 @@ What I've learned:
 - How to add a score tracker
 - How to ask for user input using the: prompt
 - Worked on string concatenation
+- Working with branches and how to merge and delete them!
