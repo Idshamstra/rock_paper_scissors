@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
 
 
 let choice = ['rock', 'paper', 'scissors'];
@@ -60,4 +60,3 @@ document.getElementById('rock').addEventListener('click', () => handleButtonClic
 document.getElementById('paper').addEventListener('click', () => handleButtonClick('paper'));
 document.getElementById('scissors').addEventListener('click', () => handleButtonClick('scissors'));
 
-});
