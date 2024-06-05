@@ -33,10 +33,10 @@ function updateScore() {
 
 function checkWinner() {
     if (playerScore === 5) {
-        document.getElementById('winner').textContent = "Congratulations! You won the game!";
+        document.getElementById('winner').textContent = "AYY YOU WIN! LET'S GO!";
         disableButtons();
     } else if (computerScore === 5) {
-        document.getElementById('winner').textContent = "Sorry, you lost the game. Computer wins!";
+        document.getElementById('winner').textContent = "WOMP WOMP, YOU LOSE!";
         disableButtons();
     }
 }

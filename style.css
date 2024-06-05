@@ -1,5 +1,5 @@
 body {
-    background: rgb(129, 238, 129);
+    background: rgb(89, 167, 89);
 }
 
 h1 {
@@ -8,21 +8,36 @@ h1 {
 }
 
 #buttons {
+
     display: flex;
     justify-content: center;
-    gap: 5%;
+    align-items: center;
+    gap: 2.5%;
+    flex-wrap: nowrap;
+    
 }
 
 #score {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 5%;
     font-weight: bold;
 }
 
 #winner, #result {
     display: flex;
     justify-content: center;
-    margin: 10%;
+    margin-top: 5%;
     font-weight: bold;
+    
+}
+
+#rock, #paper, #scissors {
+    background-color: rgb(2, 2, 2);
+    color: white;
+    font-family: fantasy, cursive, sans-serif;
+    border-radius: 16px;
+    height: 64px;
+    width: 80px;
+
 }
